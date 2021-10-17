@@ -15,7 +15,11 @@ namespace task_2_3
             foreach (var item in sMac.MacSearch())
                 Console.WriteLine(item);
 
+            string sEmail = "root@localhost";
+            Console.WriteLine(sEmail.EmailValid());
 
+            string sPassword = "C001f1111111";
+            Console.WriteLine(sPassword.PasswordSafe());
         }
 
     }
@@ -33,7 +37,23 @@ namespace task_2_3
             return regex.Matches(str);
         }
 
+        public static bool EmailValid(this string str)
+        {
+            var regex = new Regex(@"[a-z]@[a-z]((.[a-z])|())", RegexOptions.IgnoreCase);
+            if (regex.IsMatch(str))
+                return true;
+            else
+                return false;
+        }
 
+        public static bool PasswordSafe(this string str)
+        {
+            var regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=_*)[a-zA-Z\d_]{8,}$");
+            if (regex.IsMatch(str))
+                return true;
+            else
+                return false;
+        }
     }
 
 }
