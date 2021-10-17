@@ -1,25 +1,13 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace task_2_3
+
+namespace Task
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string sTime = "ухйцайцуацуацуа цу 10:00 цуацу апцуацуац";
-            foreach (var item in sTime.TimeSearch())
-                Console.WriteLine(item);
-
-            string sMac = "ухйцайцуацуацуа цу 10:00 цуа aB:dC:cA:56:76:54 цу апцуацуац";
-            foreach (var item in sMac.MacSearch())
-                Console.WriteLine(item);
-
-            string sEmail = "root@localhost";
-            Console.WriteLine(sEmail.EmailValid());
-
-            string sPassword = "C001f1111111";
-            Console.WriteLine(sPassword.PasswordSafe());
         }
 
     }
@@ -33,7 +21,7 @@ namespace task_2_3
 
         public static MatchCollection MacSearch(this string str)
         {
-            var regex = new Regex(@"([a-z][a-z]:){3}([0-9][0-9]:){2}[0-9]", RegexOptions.IgnoreCase);
+            var regex = new Regex(@"([a-z][a-z]:){3}([0-9][0-9]:){2}[0-9][0-9]", RegexOptions.IgnoreCase);
             return regex.Matches(str);
         }
 

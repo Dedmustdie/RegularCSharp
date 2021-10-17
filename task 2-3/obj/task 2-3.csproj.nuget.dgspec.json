@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kensein\\source\\repos\\task 2-3\\task 2-3\\task 2-3.csproj": {}
+    "C:\\Users\\Kensein\\source\\repos\\Prakt1\\task 2-3\\task 2-3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kensein\\source\\repos\\task 2-3\\task 2-3\\task 2-3.csproj": {
+    "C:\\Users\\Kensein\\source\\repos\\Prakt1\\task 2-3\\task 2-3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kensein\\source\\repos\\task 2-3\\task 2-3\\task 2-3.csproj",
+        "projectUniqueName": "C:\\Users\\Kensein\\source\\repos\\Prakt1\\task 2-3\\task 2-3.csproj",
         "projectName": "task 2-3",
-        "projectPath": "C:\\Users\\Kensein\\source\\repos\\task 2-3\\task 2-3\\task 2-3.csproj",
+        "projectPath": "C:\\Users\\Kensein\\source\\repos\\Prakt1\\task 2-3\\task 2-3.csproj",
         "packagesPath": "C:\\Users\\Kensein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kensein\\source\\repos\\task 2-3\\task 2-3\\obj\\",
+        "outputPath": "C:\\Users\\Kensein\\source\\repos\\Prakt1\\task 2-3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kensein\\AppData\\Roaming\\NuGet\\NuGet.Config",
